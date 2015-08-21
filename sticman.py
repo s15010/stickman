@@ -209,7 +209,7 @@ class StickFigureSprite(Sprite):
                     self.game.canvas.create_text(250, 250, text="game over", font=("Times", 50))
                     self.game.running = False
                 if sprite.endgame:
-                    self.game.canvas.create_text(250, 50, text="クリア--!!", fill="black", font=("Times", 30))
+                    self.game.canvas.create_text(250, 50, text="ゲームクリア！w(ﾟoﾟ)w", fill="red", font=("Times", 30))
                     self.game.running = False
             if right and self.x > 0 and collided_right(co, sprite_co):
                 self.x = 0
@@ -218,7 +218,7 @@ class StickFigureSprite(Sprite):
                     self.game.canvas.create_text(250, 250, text="game over", font=("Times", 50))
                     self.game.running = False
                 if sprite.endgame:
-                    self.game.canvas.create_text(250, 50, text="クリア--!!", fill="black", font=("Times", 30))
+                    self.game.canvas.create_text(250, 50, text="ゲームクリア！w(ﾟoﾟ)w", fill="red", font=("Times", 30))
                     self.game.running = False
         if falling and bottom and self.y == 0 \
                     and co.y2 < self.game.canvas_height:
